@@ -1,1 +1,14 @@
-
+<style>
+		  #main-title-heading {
+            background-color: #800020;
+        }
+		
+		body { 
+				background-color: #FFFDD0;
+		}
+		h1 {
+            color: rgb(255, 255, 255);
+        }
+		h1 {
+			font-family: "Century Gothic";
+        }
