@@ -17,7 +17,41 @@
 				font-family: "Century Gothic";
         }
 		ul, ol {
-                list-style-position: inside;
-                text-align: center;
-                padding-left: 0;
+                		list-style-position: inside;
+                		text-align: center;
+                		padding-left: 0;
+	}
+		nav {
+   				text-align: center;
+    				margin: 20px 0;
+	}
+
+		nav ul {
+    				list-style: none; /* Remove bullet points */
+    				padding: 0;
+	}
+
+		nav li {
+    				display: inline; /* Display links in a row */
+    				margin: 0 15px; /* Space between links */
+	}
+
+		nav a {
+    				display: inline-block; /* Make links behave like block elements */
+    				text-decoration: none; /* Remove underline */
+    				color: #fff; /* White text */
+    				background-color: #007BFF; /* Blue background */
+    				padding: 10px 20px; /* Add padding */
+    				border-radius: 5px; /* Round the corners */
+    				font-size: 1.2em; /* Increase the font size */
+    				transition: background-color 0.3s; /* Smooth background transition */
+	}
+
+		nav a:hover {
+    				background-color: #0056b3; /* Darker blue on hover */
+	}
+
+
+		nav a i {	
+    				margin-right: 5px; /* Space between icon and text */
 	}
