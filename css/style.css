@@ -10,10 +10,11 @@
             			color: rgb(255, 255, 255);
         }
 		h1 {
-			font-family: "Century Gothic";
+				font-family: "Century Gothic";
         }
 		p {
             			color: rgb(0, 0, 0);
+				font-family: "Gill Sans";
         }
 		ul, ol {
                 list-style-position: inside;
