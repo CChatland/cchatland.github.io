@@ -1,39 +1,207 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Mon menu</title>
-	<link rel="stylesheet" href="css/style.css">
+        <title>Menu de la semaine</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-	<center>
-        <h1 id="main-title-heading">Mon Menu<h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Repas</th>
-                    <th>Ingrédients</th>
-                    <th>Prix</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                    <td>Gaufres</td>
-                    <td>Oeuf<br> Farine<br> Lait<br> Levure chimique<br> Beurre<br> </td>
-                    <td>7.99$</td>
-                </tr>
-                <tr>
-                    <td>Pizza</td>
-                    <td>Pâte<br> Sauce à pizza<br> Fromage<br> Pepperoni<br> </td>
-                    <td>16,99$</td>
-                </tr>
-                <tr>
-                    <td>Cotes</td>
-                    <<td>Côtes de porc<br> Sauce barbecue</td>
-                    <td>39,99$</td>
-                </tr>
-            </tbody>
-        </table>
-	</center>
+        <!-- Table des matières avec des liens internes vers chaque section de la semaine -->
+        <nav>
+            <h2>Navigation des menus</h2>
+            <ul>
+                <li><a href="#lundi">Lundi</a></li>
+                <li><a href="#mardi">Mardi</a></li>
+                <li><a href="#mercredi">Mercredi</a></li>
+                <li><a href="#jeudi">Jeudi</a></li>
+                <li><a href="#vendredi">Vendredi</a></li>
+                <li><a href="#samedi">Samedi</a></li>
+                <li><a href="#dimanche">Dimanche</a></li>
+            </ul>
+        </nav>
+
+        <!-- Le menu de chaque jour -->
+        <section id="lundi">
+            <h2>Menu du Lundi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Repas</th>
+                        <th>Ingrédients</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gaufres</td>
+                        <td>Oeuf, Farine, Lait, Levure chimique, Beurre</td>
+                        <td>7,99$</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza</td>
+                        <td>Pâte, Sauce à pizza, Fromage, Pepperoni</td>
+                        <td>16,99$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="mardi">
+            <h2>Menu du Mardi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Repas</th>
+                        <th>Ingrédients</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cotes</td>
+                        <td>Côtes de porc, Sauce barbecue</td>
+                        <td>39,99$</td>
+                    </tr>
+                    <tr>
+                        <td>Salade César</td>
+                        <td>Laitue, Poulet grillé, Parmesan, Croutons</td>
+                        <td>12,99$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="mercredi">
+            <h2>Menu du Mercredi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Repas</th>
+                        <th>Ingrédients</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macaroni au fromage</td>
+                        <td>Macaroni, Fromage cheddar, Crème, Beurre</td>
+                        <td>11,99$</td>
+                    </tr>
+                    <tr>
+                        <td>Pâté chinois</td>
+                        <td>Boeuf haché, Maïs, Pommes de terre</td>
+                        <td>14,99$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="jeudi">
+            <h2>Menu du Jeudi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Repas</th>
+                        <th>Ingrédients</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pérogies</td>
+                        <td>Pomme de terre, Fromage, Oignon, Crème sure</td>
+                        <td>9,99$</td>
+                    </tr>
+                    <tr>
+                        <td>Pâtes à la sauce à la viande</td>
+                        <td>Pâtes, Sauce tomate, Boeuf haché, Ail</td>
+                        <td>13,99$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="vendredi">
+            <h2>Menu du Vendredi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Repas</th>
+                        <th>Ingrédients</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bol de burrito</td>
+                        <td>Riz, Haricots, Poulet, Salsa, Fromage</td>
+                        <td>10,99$</td>
+                    </tr>
+                    <tr>
+                        <td>Salade de quinoa</td>
+                        <td>Quinoa, Légumes frais, Feta, Citron</td>
+                        <td>12,99$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="samedi">
+            <h2>Menu du Samedi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Repas</th>
+                        <th>Ingrédients</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Crêpes</td>
+                        <td>Farine, Oeufs, Lait, Sucre, Beurre</td>
+                        <td>6,99$</td>
+                    </tr>
+                    <tr>
+                        <td>Boeuf bourguignon</td>
+                        <td>Boeuf, Vin rouge, Carottes, Champignons</td>
+                        <td>22,99$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="dimanche">
+            <h2>Menu du Dimanche</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Repas</th>
+                        <th>Ingrédients</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rôti de porc</td>
+                        <td>Porc, Pommes de terre, Légumes, Sauce</td>
+                        <td>19,99$</td>
+                    </tr>
+                    <tr>
+                        <td>Soupe à l'oignon</td>
+                        <td>Oignons, Bouillon de boeuf, Pain, Fromage</td>
+                        <td>8,99$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Liens vers des restaurants populaires -->
+        <footer>
+            <h2>Liens vers des restaurants populaires</h2>
+            <ul>
+                <li><a href="https://www.restomontreal.ca/" target="_blank">RestoMontreal</a></li>
+                <li><a href="https://www.tripadvisor.com/Restaurants" target="_blank">TripAdvisor Restaurants</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
