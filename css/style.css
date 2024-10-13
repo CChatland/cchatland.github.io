@@ -16,7 +16,6 @@
             			color: rgb(0, 0, 0);
         }
 		ul, ol {
-                list-style-position: inside; /* Makes sure the dots/numbers stay with the list item */
-                text-align: center; /* Centers the text */
-                padding-left: 0; /* Removes any default indentation */
-            }
+                list-style-position: inside;
+                text-align: center;
+                padding-left: 0;
