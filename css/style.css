@@ -55,3 +55,20 @@
 		nav a i {	
     				margin-right: 5px; 
 	}
+		body {
+  				display: flex;
+   				justify-content: center;
+    				align-items: center;
+    				height: 100vh;
+    				margin: 0;  
+	}
+
+		.image-container {
+    				display: flex;
+	}
+
+		.image-container img {
+    				max-width: 100%;
+    				height: auto;
+    				margin: 0 10px;
+	}
