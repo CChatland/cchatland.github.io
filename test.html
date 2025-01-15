@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Website</title>
+    <style>
+        body {
+			font-family: "Century Gothic", sans-serif;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 20px;
+		}
+
+		h1 {
+			color: red;
+			font-family: "Montserrat", sans-serif;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>C DOG Équipements</h1>
+	</header>
+
+	<script>
+		let cart = {};
+
+		function ajouteAuPanier(product, price) {
+			let quantite = parseInt(prompt(`Combien de ${product} voulez-vous ?`));
+			if (isNaN(quantite) || quantite <= 0) {
+				alert("Entrez un nombre valide");
+				return;
+			}
+			if (cart[product]) {
+				cart[product].quantity += quantite;
+			} else {
+				cart[product] = { quantity: quantite, price: price };
+			}
+			alert(`${quantite} ${product}(s) ajouté(s) au panier`);
+		}
+
+		function calculeCout() {
+			let coutSansTax = 0;
+			for (let product in cart) {
+				coutSansTax += cart[product].quantity * cart[product].price;
+			}
+			let coutTax = coutSansTax * 1.13;
+			let coutTotal = coutTax * 0.90;
+			alert(`Voici votre coût total: $${coutTotal.toFixed(2)}`);
+		}
+	</script>
+
+	<p>Entreprise fondée par un jeune homme qui avait un rêve, un rêve d'un monde en santé</p>
+
+	<p>Haltères - 30$</p>
+	<img src="https://go-zone.ca/cdn/shop/products/191730242386_1_720x.png?v=1572622417" width="150" height="150" alt="Haltère"><br>
+	<input type="button" onclick="ajouteAuPanier('Haltères', 30)" value="Ajouter au panier"><br>
+
+	<p>Barre - 150$</p>
+	<img src="https://canadianprotein.com/cdn/shop/products/0aff1e96-4119-4762-ae62-3131ff524539.jpg?v=1618861148&width=713" width="150" height="150" alt="Barre"><br>
+	<input type="button" onclick="ajouteAuPanier('Barre', 150)" value="Ajouter au panier"><br>
+
+	<p>Kettlebells - 20$</p>
+	<img src="https://treadmillfactory.ca/cdn/shop/products/cik-32k-face.jpg?v=1618264230&width=823" width="150" height="150" alt="Kettlebell"><br>
+	<input type="button" onclick="ajouteAuPanier('Kettlebells', 20)" value="Ajouter au panier">
+
+	<br><br>
+	<input type="button" onclick="calculeCout()" value="Finaliser votre achat">
+</body>
+</html>
 
